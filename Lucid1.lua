@@ -440,7 +440,7 @@ end)
 -- PropESP
 hook.Add( "HUDPaint", "PropESP", function()
 	for k,v in pairs ( ents.FindByClass( "prop_physics" ) ) do
-		if GetConVarNumber("propchams") == 1 then
+		if GetConVarNumber("_propchams") == 1 then
 			cam.Start3D(EyePos(), EyeAngles())
 				if v:IsValid() then
 					render.SuppressEngineLighting( false )
