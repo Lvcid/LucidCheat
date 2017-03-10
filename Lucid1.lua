@@ -272,7 +272,7 @@ if GetConVarNumber("LucidESP") != 1 then return end
        	draw.SimpleTextOutlined( v:Health(), "dat2", PositionName.x , PositionName.y  - 35, Color(255,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 1, Color(80, 0 , 0 ))
 		
 		cam.Start3D()
-			render.DrawWireframeBox( v:GetPos(), Angle( 0, v:EyeAngles().y, 0), v:OBBMins(), v:OBBMaxs(), Color( 0, 100, 255 ) )
+			render.DrawWireframeBox( v:GetPos(), Angle( 0, v:EyeAngles().y, 0), v:OBBMins(), v:OBBMaxs(), Color( 255, 0, 255 ) )
 		cam.End3D()
 
 		end
